@@ -1,18 +1,13 @@
 "use strict";
 let typeOfCode = 'num';
-let input = document.getElementById('input');
-let output = document.getElementById('output');
-let radio1 = document.getElementById('radio1');
-let radio2 = document.getElementById('radio2');
+let input = document.querySelector('#input');
+let output = document.querySelector('#output');
+let radio = document.querySelectorAll('.radio');
+console.log(radio);
 
-let radioHandler1 = (e) => {
-    typeOfCode = 'num';
-    inputHandler(e);
-};
-
-let radioHandler2 = (e) => {
-    typeOfCode = 'let';
-    inputHandler(e);
+let radioHandler = (e) => {
+    typeOfCode = e.target.value;
+    inputHandler();
 };
 
 let inputHandler = (e) => {
@@ -96,5 +91,7 @@ let inputHandler = (e) => {
 };
 
 input.addEventListener('input', inputHandler);
-radio1.addEventListener('input', radioHandler1);
-radio2.addEventListener('input', radioHandler2);
+
+for (let i = 0; i < radio.length; i++){
+    radio[i].addEventListener('input', radioHandler);
+};
