@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css?v0.01">
     <title>Document</title>
 </head>
+
 <body>
-    <textarea id="input" rows="9" cols="30"></textarea>
-    <br>
-    <input type="radio" class="radio" value="num" name="type" checked> Цифры
-    <input type="radio" class="radio" value="let" name="type"> Буквы
-    <br>
-    <textarea id="output" rows="9" cols="30"></textarea>
+    <div class="main">
+        <textarea id="input" rows="13" cols="100"></textarea>
+        <div class="radios">
+            <p>
+                Стиль шифрования:
+
+                <input type="radio" class="radioType" value="num" name="type" checked> Цифры
+                <input type="radio" class="radioType" value="let" name="type"> Буквы
+            </p>
+            <p>
+                Язык исходного текста:
+
+                <input type="radio" class="radioLang" value="rus" name="lang" checked> Русский
+                <input type="radio" class="radioLang" value="eng" name="lang"> English
+            </p>
+        </div>
+        <textarea id="output" rows="13" cols="100" disabled></textarea>
+    </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
