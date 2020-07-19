@@ -10,13 +10,13 @@
 
 <body>
     <div class="main">
-        <textarea id="input" rows="13" cols="100"></textarea>
+        <textarea id="input" rows="5" cols="75"></textarea>
         <div class="radios">
             <p>
                 Стиль шифрования:
 
-                <input type="radio" class="radioType" value="num" name="type" checked> Цифры
-                <input type="radio" class="radioType" value="let" name="type"> Буквы
+                <input type="radio" class="radioType" value="let" name="type" checked> Буквы
+                <input type="radio" class="radioType" value="num" name="type"> Цифры
             </p>
             <p>
                 Язык исходного текста:
@@ -25,8 +25,51 @@
                 <input type="radio" class="radioLang" value="eng" name="lang"> English
             </p>
         </div>
-        <textarea id="output" rows="13" cols="100" disabled></textarea>
+        <textarea id="encryptedText" rows="9" cols="75" disabled></textarea>
+        <br>
+        <textarea id="solutionText" rows="9" cols="75" disabled></textarea>
+        <br>
+        А:<textarea class="solutionChar" rows="1" cols="1" value='а' maxlength="1"></textarea>
+        Б:<textarea class="solutionChar" rows="1" cols="1" value='б' maxlength="1"></textarea>
+        В:<textarea class="solutionChar" rows="1" cols="1" value='в' maxlength="1"></textarea>
+        Г:<textarea class="solutionChar" rows="1" cols="1" value='г' maxlength="1"></textarea>
+        Д:<textarea class="solutionChar" rows="1" cols="1" value='д' maxlength="1"></textarea>
+        Е:<textarea class="solutionChar" rows="1" cols="1" value='е' maxlength="1"></textarea>
+        Ж:<textarea class="solutionChar" rows="1" cols="1" value='ж' maxlength="1"></textarea>
+        З:<textarea class="solutionChar" rows="1" cols="1" value='з' maxlength="1"></textarea>
+        И:<textarea class="solutionChar" rows="1" cols="1" value='и' maxlength="1"></textarea>
+        Й:<textarea class="solutionChar" rows="1" cols="1" value='й' maxlength="1"></textarea>
+        К:<textarea class="solutionChar" rows="1" cols="1" value='к' maxlength="1"></textarea>
+        <br>
+        Л:<textarea class="solutionChar" rows="1" cols="1" value='л' maxlength="1"></textarea>
+        М:<textarea class="solutionChar" rows="1" cols="1" value='м' maxlength="1"></textarea>
+        Н:<textarea class="solutionChar" rows="1" cols="1" value='н' maxlength="1"></textarea>
+        О:<textarea class="solutionChar" rows="1" cols="1" value='о' maxlength="1"></textarea>
+        П:<textarea class="solutionChar" rows="1" cols="1" value='п' maxlength="1"></textarea>
+        Р:<textarea class="solutionChar" rows="1" cols="1" value='р' maxlength="1"></textarea>
+        С:<textarea class="solutionChar" rows="1" cols="1" value='с' maxlength="1"></textarea>
+        Т:<textarea class="solutionChar" rows="1" cols="1" value='т' maxlength="1"></textarea>
+        У:<textarea class="solutionChar" rows="1" cols="1" value='у' maxlength="1"></textarea>
+        Ф:<textarea class="solutionChar" rows="1" cols="1" value='ф' maxlength="1"></textarea>
+        Х:<textarea class="solutionChar" rows="1" cols="1" value='х' maxlength="1"></textarea>
+        <br>
+        Ц:<textarea class="solutionChar" rows="1" cols="1" value='ц' maxlength="1"></textarea>
+        Ч:<textarea class="solutionChar" rows="1" cols="1" value='ч' maxlength="1"></textarea>
+        Ш:<textarea class="solutionChar" rows="1" cols="1" value='ш' maxlength="1"></textarea>
+        Щ:<textarea class="solutionChar" rows="1" cols="1" value='щ' maxlength="1"></textarea>
+        Ъ:<textarea class="solutionChar" rows="1" cols="1" value='ъ' maxlength="1"></textarea>
+        Ы:<textarea class="solutionChar" rows="1" cols="1" value='ы' maxlength="1"></textarea>
+        Ь:<textarea class="solutionChar" rows="1" cols="1" value='ь' maxlength="1"></textarea>
+        Э:<textarea class="solutionChar" rows="1" cols="1" value='э' maxlength="1"></textarea>
+        Ю:<textarea class="solutionChar" rows="1" cols="1" value='ю' maxlength="1"></textarea>
+        Я:<textarea class="solutionChar" rows="1" cols="1" value='я' maxlength="1"></textarea>
+        Ё:<textarea class="solutionChar" rows="1" cols="1" value='ё' maxlength="1"></textarea>
+        <br>
+        <div>
+            <button id="hintButton">Дать подсказку</button>
+        </div>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 
